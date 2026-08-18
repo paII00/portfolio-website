@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tanvi Tanvi Pal — Portfolio</title>
+  <meta name="description" content="Portfolio von Tanvi Tanvi Pal — Visuelle Kommunikation, Branding, Illustration und Fotografie." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=upload-20260818" />
+</head>
+<body>
+  <div class="cursor-dot" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav aria-label="Hauptnavigation">
+      <a href="#about">About</a>
+      <a href="#selected">Selected Work</a>
+      <a href="#archive">Archive</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero blue-section envelope-hero">
+
+      <img
+        class="hero-flower-frame"
+        src="assets/flowers/flower-frame.webp"
+        alt=""
+        aria-hidden="true"
+        draggable="false"
+      />
+
+      <button
+        class="mail-scene"
+        id="mailScene"
+        type="button"
+        aria-label="Brief öffnen"
+        aria-expanded="false"
+      >
+        <span class="mail-object">
+          <span class="closed-state" aria-hidden="true">
+            <img
+              class="mail-closed"
+              src="assets/envelope/frame-01-closed.webp"
+              alt=""
+              draggable="false"
+            />
+          </span>
+
+          <span class="open-state">
+            <img
+              class="mail-open-back"
+              src="assets/envelope/frame-02-open-flap.webp"
+              alt=""
+              aria-hidden="true"
+              draggable="false"
+            />
+            <img
+              class="mail-letter"
+              src="assets/envelope/frame-04-letter.webp"
+              alt="Zettel mit Foto und handgeschriebenem Text: Hi! Ich bin Tina"
+              draggable="false"
+            />
+            <img
+              class="mail-open-front"
+              src="assets/envelope/frame-03-open-pocket.webp"
+              alt=""
+              aria-hidden="true"
+              draggable="false"
+            />
+          </span>
+        </span>
+      </button>
+
+      <div class="hero-reveal" id="heroReveal" aria-hidden="true">
+        <p class="hero-description">
+          Kommunikationsdesignerin mit einer Schwäche für gute Ideen und schlechte Wortspiele. Zuhause in Branding, digitalen Projekten und allem dazwischen.
+        </p>
+        <p class="hero-scroll">Scroll down</p>
+      </div>
+
+      <p class="envelope-hint" id="envelopeHint">Brief anklicken</p>
+    </section>
+
+    <section class="discipline-strip beige-section" aria-label="Disziplinen">
+      <div class="marquee">
+        <div class="marquee-track">
+          <div class="marquee-group" aria-hidden="false">
+            <span>Branding</span><i>•</i><span>Editorial</span><i>•</i><span>Typography</span><i>•</i><span>Identity</span><i>•</i><span>Campaign</span><i>•</i><span>Illustration</span><i>•</i><span>Photography</span><i>•</i><span>Print</span><i>•</i><span>Visual Communication</span><i>•</i>
+          </div>
+          <div class="marquee-group" aria-hidden="true">
+            <span>Branding</span><i>•</i><span>Editorial</span><i>•</i><span>Typography</span><i>•</i><span>Identity</span><i>•</i><span>Campaign</span><i>•</i><span>Illustration</span><i>•</i><span>Photography</span><i>•</i><span>Print</span><i>•</i><span>Visual Communication</span><i>•</i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="selected" class="selected-grid beige-section section-pad">
+      <div class="section-heading-row">
+        <h2>Selected Work</h2>
+        <span>6 ausgewählte Projekte</span>
+      </div>
+
+      <div class="work-cards">
+        <article class="work-card work-card-image zwergenwiese-card" data-project="Zwergenwiese" data-project-id="zwergenwiese" data-category="branding" tabindex="0" role="button" aria-label="Projekt Zwergenwiese öffnen">
+          <img src="assets/projects/zwergenwiese/picnic.webp" alt="Zwergenwiese Gläser beim Picknick" />
+          <span class="work-card-overlay" aria-hidden="true"></span>
+          <span class="card-no">01</span><span class="card-name">Zwergenwiese</span><span class="card-type">Branding · Packaging · Freie Arbeit</span>
+        </article>
+        <article class="work-card work-card-image lunar-card" data-project="Lunar Year" data-project-id="lunar-year" data-category="editorial" tabindex="0" role="button" aria-label="Projekt Lunar Year öffnen">
+          <img src="assets/projects/lunar-year/hero-horse-mockup.webp" alt="Schräg liegendes Year of the Horse Poster auf Beton" />
+          <span class="work-card-overlay" aria-hidden="true"></span>
+          <span class="card-no">02</span><span class="card-name">Lunar Year</span><span class="card-type">Poster Design · Freie Arbeit</span>
+        </article>
+        <article class="work-card work-card-image walksafe-card" data-project="Walksafe+" data-project-id="walksafe" data-category="digital" tabindex="0" role="button" aria-label="Projekt Walksafe+ öffnen">
+          <img src="assets/projects/walksafe/hero-pocket.webp" alt="Walksafe+ App Mockup" />
+          <span class="work-card-overlay" aria-hidden="true"></span>
+          <span class="card-no">03</span><span class="card-name">Walksafe+</span><span class="card-type">Digital · Smart Mobility · Semesterprojekt</span>
+        </article>
+        <article class="work-card work-card-image neutral-card" data-project="Neutralisierte Sprachfläche" data-project-id="neutral-sprache" data-category="editorial" tabindex="0" role="button" aria-label="Projekt Neutralisierte Sprachfläche öffnen">
+          <img src="assets/projects/neutral-sprache/cover-card.jpg" alt="Buchcover Neutralisierte Sprachfläche auf Beton" />
+          <span class="work-card-overlay" aria-hidden="true"></span>
+          <span class="card-no">04</span><span class="card-name">Neutralisierte Sprachfläche</span><span class="card-type">Typografie · Editorial · 2. Semester</span>
+        </article>
+        <article class="work-card work-card-image steinboc-card" data-project="Steinboc" data-project-id="steinboc" data-category="branding" tabindex="0" role="button" aria-label="Projekt Steinboc öffnen">
+          <img src="assets/projects/steinboc/hero.webp" alt="Steinboc Poster-Mockup auf einem Skilift" />
+          <span class="work-card-overlay" aria-hidden="true"></span>
+          <span class="card-no">05</span><span class="card-name">Steinboc</span><span class="card-type">Corporate Design · Photography · 3. Semester</span>
+        </article>
+        <article class="work-card work-card-image democracy-card" data-project="Demokratie feiern" data-project-id="demokratie-feiern" data-category="campaign" tabindex="0" role="button" aria-label="Projekt Demokratie feiern öffnen">
+          <img src="assets/projects/demokratie-feiern/card-preview.webp" alt="City-Light-Plakat der Demokratie-feiern-Kampagne in Stuttgart" />
+          <span class="work-card-overlay" aria-hidden="true"></span>
+          <span class="card-no">06</span><span class="card-name">Demokratie feiern</span><span class="card-type">Campaign · Poster Series · Art Direction</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="archive" class="selected-list beige-section" aria-label="Archiv">
+      <div class="selected-intro section-pad">
+        <div>
+          <p class="eyebrow">Notizen, Skizzen, Nebenwege und Arbeiten außerhalb der Auswahl.</p>
+          <h2>Ein loses<br />Archiv.</h2>
+        </div>
+        <div class="selected-meta">2024—2026 · Stuttgart</div>
+      </div>
+      <div class="project-row raster-row" data-index="01" data-project="Raster" data-project-id="raster" tabindex="0" role="button" aria-label="Projekt Raster öffnen"><div class="project-title">Raster</div><div class="project-index">01</div></div>
+      <div class="project-row calendar-row inverted" data-index="02" data-project="2026 Calendar" data-project-id="calendar" tabindex="0" role="button" aria-label="Projekt 2026 Calendar öffnen"><div class="project-title">2026 Calendar</div><div class="project-index">02</div></div>
+      <div class="project-row" data-index="03" data-project="Postkarten &amp; Sticker" data-project-id="postkarten-sticker" tabindex="0" role="button" aria-label="Projekt Postkarten und Sticker öffnen"><div class="project-title">Postkarten &amp; Sticker</div><div class="project-index">03</div></div>
+      <div class="project-row inverted" data-index="04" data-project="Alternative Stadtkampagne" data-project-id="stadt-kampagne" tabindex="0" role="button" aria-label="Projekt Alternative Stadtkampagne öffnen"><div class="project-title">Alternative Stadtkampagne</div><div class="project-index">04</div></div>
+      <div class="project-row" data-index="05" data-project="40. Plakatwettbewerb Studierendenwerk" data-project-id="studierendenwerk" tabindex="0" role="button" aria-label="Projekt 40. Plakatwettbewerb Studierendenwerk öffnen"><div class="project-title">40. Plakatwettbewerb Studierendenwerk</div><div class="project-index">05</div></div>
+    </section>
+
+    <section id="about" class="about about-snapshot blue-section">
+      <div class="about-snapshot-grid section-pad">
+        <div class="about-heading-copy">
+          <h2>About Me</h2>
+          <p class="about-intro-text">Still sitzen und nur eine Sache machen war noch nie so meins. Ich liebe es, Neues auszuprobieren, mich in Ideen zu verlieren und aus einem „Ich schau nur mal kurz“ ein komplett neues Projekt zu machen.</p>
+        </div>
+        <figure class="about-photo about-photo-top"><img src="assets/about/foto.webp" alt="Tanvi sitzt mit Laptop an einem Tisch" /></figure>
+        <figure class="about-photo about-photo-bottom"><img src="assets/about/about-polaroid-standing.webp" alt="Polaroid-Portrait von Tanvi" /></figure>
+        <div class="about-bio">
+          <p>Ich studiere Visuelle Kommunikation an der Fakultät für Gestaltung in Pforzheim und komme bald ins vierte Semester. Besonders gerne entwickle ich Brandings, aber ehrlich gesagt kann ich mich für ziemlich alles begeistern, bei dem ich gestalten und ausprobieren kann.</p>
+          <p>Bevor ich loslege, landen erstmal viel zu viele Referenzen in meinen Moodboards. Ich recherchiere, schaue, was andere machen und dann wird ausprobiert. Meistens entstehen dabei mehr Varianten als nötig, aber genau das ist der Teil, den ich am Gestalten liebe. Einen festen Stil habe ich nicht und vermisse ihn bisher auch nicht. Was trotzdem verdächtig oft auftaucht: Typografie und Farben, die man nicht übersehen kann.</p>
+          <p>Aufgewachsen bin ich zwischen Deutschland und Indien, mittlerweile lebe ich mit meinem Freund und unseren zwei Katzen in Stuttgart. Wenn ich nicht gerade an irgendeinem Entwurf sitze, backe ich gerne, interessiere mich für Botanik oder stehe ab und zu selbst vor der Kamera. Ganz ohne Gestaltung geht's aber auch in der Freizeit nicht, dafür probiere ich einfach zu gerne Neues aus. Meine Katzen sind meistens mit am Start, mit konstruktivem Feedback halten sie sich aber eher zurück.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact beige-section">
+      <div class="contact-card section-pad" style="min-height:0;padding-top:0;padding-bottom:0;grid-template-columns:1fr;gap:0;">
+        <div class="contact-copy">
+          <h2>Sag Hi! :)</h2>
+          <a href="mailto:pal.tina@web.de">pal.tina@web.de</a>
+        </div>
+      </div>
+      <footer class="contact-footer beige-section">
+        <div>© 2026</div>
+        <nav aria-label="Rechtliche Links">
+          <a href="datenschutz.html">Datenschutz</a>
+          <a href="impressum.html">Impressum</a>
+        </nav>
+      </footer>
+    </section>
+  </main>
+
+  <div class="project-modal" aria-hidden="true" role="dialog" style="visibility:hidden" aria-modal="true" aria-labelledby="modal-title">
+    <button class="modal-close" aria-label="Projekt schließen">×</button>
+    <div class="modal-inner project-placeholder" data-project-view="placeholder">
+      <p class="eyebrow">Selected Project</p>
+      <h2 id="modal-title">Projekt</h2>
+      <p>Diese Projektansicht wird nach und nach ergänzt.</p>
+      <div class="modal-image-grid"><div></div><div></div><div></div></div>
+    </div>
+
+    <article class="case-study ws-case" data-project-view="walksafe" hidden>
+      <header class="ws-hero">
+        <div class="ws-hero-copy">
+          <p class="ws-kicker">DIGITALE MEDIEN · SMART MOBILITY · SEMESTERPROJEKT</p>
+          <h2>Nicht einfach nach Hause.<br><em>Sondern mit einem besseren Gefühl.</em></h2>
+          <p class="ws-summary">Walksafe+ denkt Navigation nicht als Wettlauf von A nach B. Die App sucht den Weg, der sich nachts besser anfühlt – mit mehr Licht, mehr Leben und weniger Alleinsein.</p>
+        </div>
+        <figure class="ws-hero-visual"><img src="assets/projects/walksafe/hero-pocket.webp" alt="Walksafe+ auf einem Smartphone in einer gestreiften Hemdtasche" /></figure>
+      </header>
+
+      <section class="ws-problem ws-pad">
+        <p class="ws-section-no">01 — AUSGANGSLAGE</p>
+        <div class="ws-two-col">
+          <h3>Der Heimweg ist Teil der Mobilität.<br><em>Das Gefühl dabei auch.</em></h3>
+          <div class="ws-copy"><p>Nachts unterwegs zu sein kann schnell von „bin gleich da“ zu „hoffentlich passiert nichts“ kippen. Nicht jede Person kann abgeholt werden, Taxis sind teuer oder fühlen sich selbst nicht immer sicher an – und im Ernstfall ist man oft erstmal auf sich gestellt.</p><p>Für die Semesteraufgabe wollte ich deshalb keine weitere App bauen, die nur Minuten spart. Mich hat interessiert, wie Smart Mobility reagieren kann, wenn das eigentliche Problem nicht die Strecke ist, sondern das Gefühl auf dem Weg.</p></div>
+        </div>
+      </section>
+
+      <section class="ws-solution ws-pad">
+        <p class="ws-section-no">02 — DIE IDEE</p>
+        <div class="ws-solution-head">
+          <h3>Nicht kürzer.<br><em>Sondern sicherer gedacht.</em></h3>
+          <p>Walksafe+ priorisiert Faktoren, die einen Weg angenehmer und übersichtlicher machen: gute Beleuchtung, belebte Straßen, offene öffentliche Bereiche und möglichst wenig abgelegene Passagen. Die App verspricht keine absolute Sicherheit – sie gibt mehr Orientierung, Begleitung und Kontrolle.</p>
+        </div>
+        <div class="ws-factor-row" aria-label="Sicherheitsfaktoren">
+          <span>GOOD LIGHT</span><span>BUSY STREETS</span><span>OPEN SPACES</span><span>LESS ISOLATION</span>
+        </div>
+      </section>
+
+      <section class="ws-features ws-pad">
+        <p class="ws-section-no">03 — SYSTEM</p>
+        <div class="ws-features-head"><h3>Vier Funktionen.<br><em>Ein bisschen weniger Alleinsein.</em></h3><p>Navigation ist nur ein Teil davon. Walksafe+ verbindet Community-Wissen, direkte Unterstützung, Live-Funktionen und eine sichere Fahralternative zu einem System.</p></div>
+        <div class="ws-feature-grid">
+          <article><span>01</span><h4>Community Map</h4><p>Orte werden von Nutzer:innen als sicher oder unsicher markiert – zum Beispiel gut beleuchtet, angenehm belebt oder leer. So wächst eine Karte aus echten Erfahrungen statt nur aus Straßendaten.</p></article>
+          <article><span>02</span><h4>Live Support</h4><p>Wenn sich ein Weg plötzlich falsch anfühlt, ist jemand da. Ein direkter Chat bietet Begleitung und kann bei Bedarf an passende Hilfsstellen weiterleiten.</p></article>
+          <article><span>03</span><h4>Live Tracking + Notfall</h4><p>Der Standort lässt sich mit vertrauten Kontakten teilen. Über den Notfall-Button werden hinterlegte Personen schnell informiert, ohne erst lange suchen zu müssen.</p></article>
+          <article><span>04</span><h4>RideSafe</h4><p>Wenn Gehen keine gute Option ist, bietet RideSafe eine Alternative mit verifizierten Fahrerinnen, transparenten Profilen und Background-Checks – gedacht für Frauen, trans und non-binäre Personen.</p></article>
+        </div>
+      </section>
+
+      <section class="ws-identity ws-pad">
+        <p class="ws-section-no">04 — VISUAL SYSTEM</p>
+        <div class="ws-identity-grid">
+          <div class="ws-identity-copy">
+            <h3>Sicherheit muss nicht<br><em>nach Warnschild aussehen.</em></h3>
+            <p>Die visuelle Sprache bleibt bewusst weich, freundlich und nahbar. Das Pin-Symbol verbindet Navigation mit einem kleinen Lichtmoment – und die Figuren geben der App Charakter, ohne das Thema ins Niedliche wegzudrücken.</p>
+          </div>
+          <div class="ws-mascot-stage" aria-label="Walksafe+ visuelles System">
+            <img class="ws-identity-combo" src="assets/projects/walksafe/identity-combo.webp" alt="Walksafe+ App Icon und illustrierte Figur" />
+          </div>
+        </div>
+      </section>
+
+      <section class="ws-prototype">
+        <div class="ws-prototype-copy">
+          <p class="ws-section-no">05 — PROTOTYPE</p>
+          <h3>Einfach rein.<br><em>Einfach zurechtfinden.</em></h3>
+          <p>Walksafe+ ist als durchgängige Anwendung gedacht – nicht als lose Sammlung von Screens. Ein kurzes Quiz führt entspannt in die App ein, danach bleiben Navigation, Community Map, Support und Sicherheitsfunktionen bewusst leicht verständlich. Die Gestaltung ist freundlich, klar und unkompliziert, damit man sich gerade dann schnell zurechtfindet, wenn man nicht lange überlegen möchte.</p>
+        </div>
+        <figure class="ws-phone"><img class="ws-phone-cover" src="assets/projects/walksafe/app-dummy-poster.webp" alt="" aria-hidden="true"><video id="walksafePrototype" autoplay muted loop playsinline preload="auto" aria-label="Walksafe+ Anwendung in Benutzung"><source src="assets/projects/walksafe/app-dummy.mp4" type="video/mp4"></video></figure>
+      </section>
+
+      <section class="ws-poster ws-pad">
+        <p class="ws-section-no">06 — POSTER</p>
+        <div class="ws-poster-grid">
+          <div class="ws-poster-copy"><h3>Feel Safe.<br><em>Wherever You Go.</em></h3><p>Das Poster bringt App, Funktionen und Haltung auf eine Fläche. Der weiche Farbverlauf bleibt freundlich, während die schwarze Typografie sehr direkt sagt, worum es geht: nicht um Angst – sondern darum, sich unterwegs besser begleitet zu fühlen.</p></div>
+          <figure><img src="assets/projects/walksafe/poster.webp" alt="Walksafe+ Kampagnenposter mit App-Mockups und Funktionen" /></figure>
+        </div>
+      </section>
+
+      <section class="ws-film ws-pad">
+        <div class="ws-film-head"><p class="ws-section-no">07 — MOTION</p><h3>Aus Interface<br><em>wird Haltung.</em></h3><p>Der Werbefilm zieht die Idee aus dem Screen heraus und zeigt Walksafe+ als Gesamtprojekt: Navigation, visuelle Sprache und das Gefühl, unterwegs nicht ganz allein zu sein.</p></div>
+        <div class="ws-video-frame"><video controls playsinline preload="metadata" poster="assets/projects/walksafe/poster.webp"><source src="assets/projects/walksafe/campaign-film.mp4" type="video/mp4">Dein Browser unterstützt dieses Video nicht.</video></div>
+      </section>
+
+    </article>
+
+    <article class="case-study calendar-case" data-project-view="calendar" hidden>
+      <header class="calendar-hero">
+        <div class="calendar-hero-copy">
+          <p class="calendar-kicker">POSTER DESIGN · TYPOGRAPHY · 2026</p>
+          <h2>Ein Jahr in<br><em>seiner Handschrift.</em></h2>
+          <p class="calendar-summary">Ein Kalenderposter für 2026, aufgebaut aus Farbe, Raster und einer ganz persönlichen Schrift: Die Monatsnamen und Zahlen basieren auf der Handschrift meines Bruders.</p>
+        </div>
+        <figure class="calendar-hero-image"><img src="assets/projects/calendar/calendar-hero.webp" alt="Kalenderposter 2026 gerahmt an einer Wand" /></figure>
+      </header>
+
+      <section class="calendar-poster-section calendar-pad">
+        <p class="calendar-section-no">01 — DAS POSTER</p>
+        <div class="calendar-poster-grid">
+          <div class="calendar-copy">
+            <h3>Zwölf Monate.<br>Eine Handschrift.</h3>
+            <p>Die handgeschriebenen Monatsnamen und Ziffern bilden den ruhigen Gegenpol zur lauten, farbigen Bildwelt. Statt einer perfekten Display-Schrift bleibt die Typografie direkt, unregelmäßig und persönlich.</p>
+          </div>
+          <figure><img src="assets/projects/calendar/calendar-poster.webp" alt="Finales Kalenderposter 2026" /></figure>
+        </div>
+      </section>
+
+      <section class="calendar-origin">
+        <div class="calendar-origin-copy">
+          <p class="calendar-section-no">02 — URSPRUNG</p>
+          <h3>Von ihm geschrieben.<br><em>Von mir weitergedacht.</em></h3>
+          <p>Die Schrift sollte nicht einfach nur handgemacht aussehen – sie sollte wirklich von jemandem kommen, der mir nahesteht. Also habe ich meinen Bruder gebeten, Monate und Zahlen genau so aufzuschreiben, wie er es ganz selbstverständlich tun würde. Aus seinen Zeichen entstand das typografische Material, mit dem ich anschließend weitergearbeitet habe.</p>
+        </div>
+        <figure class="calendar-origin-image"><img src="assets/projects/calendar/handwriting-transparent.webp" alt="Freigestellte Handschrift mit Monatsnamen und Kalenderzahlen" /></figure>
+      </section>
+
+      <section class="calendar-personal calendar-pad">
+        <p class="calendar-section-no">03 — GEMEINSAM</p>
+        <div class="calendar-personal-grid">
+          <h3>Ein kleines Stück<br><em>von uns.</em></h3>
+          <div class="calendar-personal-copy">
+            <p></p>
+            <p class="calendar-personal-closing">Am Ende ist es nicht nur ein Kalender für 2026, sondern ein kleines Stück Alltag, das ein ganzes Jahr an der Wand bleibt.</p>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <article class="case-study raster-case" data-project-view="raster" hidden>
+      <header class="raster-hero">
+        <div class="raster-hero-copy">
+          <p class="raster-kicker">GRAFIK · RASTER · 1. SEMESTER</p>
+          <h2>Raster aus Erinnerung.<br><em>Form aus Herkunft.</em></h2>
+          <p class="raster-summary">Im Kurs Grafik entstand ein Raster für meine Partnerin. Weil ihre russische Kultur für sie viel bedeutet, wurde traditionelle Stickerei zum Ausgangspunkt: klare Symmetrie, harte Pixelkanten und Zeichen, die zwischen Ornament, Erinnerung und System stehen.</p>
+        </div>
+        <figure class="raster-hero-image"><img src="assets/projects/raster/hero-poster-mockup.webp" alt="Zwei Rasterposter als Mockup auf blauem Stoff" /></figure>
+      </header>
+
+      <section class="raster-origin raster-pad">
+        <div class="raster-origin-grid">
+          <div>
+            <p class="raster-section-no">01 — AUSGANGSPUNKT</p>
+            <h3>Aus Stickerei<br><em>wird Struktur.</em></h3>
+            <p>Das Motiv wurde nicht einfach abgezeichnet, sondern in Bausteine übersetzt. Erst ein leeres Raster, dann die Konstruktion darin, dann das Zeichen selbst: So wird sichtbar, wie aus kultureller Referenz ein grafisches System entsteht.</p>
+          </div>
+          <figure><img src="assets/projects/raster/leeresraster.webp" alt="Leeres Rasterfeld als Konstruktionsgrundlage" /></figure>
+          <figure><img src="assets/projects/raster/rasterleer.webp" alt="Konstruktionsraster mit eingezeichnetem Ornament" /></figure>
+          <figure><img src="assets/projects/raster/symbol.webp" alt="Einzelnes schwarzes Symbol als Grundlage des Rasters" /></figure>
+        </div>
+      </section>
+
+      <section class="raster-variants raster-pad">
+        <p class="raster-section-no light">02 — VARIATIONEN</p>
+        <div class="raster-title-row">
+          <h3>Spiegeln.<br><em>Zerlegen. Neu setzen.</em></h3>
+          <p>Danach durfte das Raster arbeiten: wiederholt, gespiegelt, geteilt und neu zusammengesetzt. Manche Varianten wirken streng und ruhig, andere fast wie ein digitales Textil. Das Ornament bleibt erkennbar, beginnt aber, sich wie eine eigene visuelle Sprache zu verhalten.</p>
+        </div>
+        <figure class="raster-variant-strip"><img src="assets/projects/raster/variationen-pngs.webp" alt="Übersicht verschiedener Rastervariationen und Konstruktionsstufen" /></figure>
+      </section>
+
+      <section class="raster-posters raster-pad">
+        <p class="raster-section-no">03 — POSTER</p>
+        <div class="raster-poster-head">
+          <h3>Vom Muster<br><em>zur Fläche.</em></h3>
+          <p>Die Poster holen das Raster aus der Konstruktion heraus. Farbe, Stoffstruktur und Überlagerung machen die Form körperlicher: nicht nur ein Ornament auf Papier, sondern ein Muster, das sich ausbreitet, flimmert und Druckgrafik mit Erinnerung verbindet.</p>
+        </div>
+        <div class="raster-poster-grid">
+          <figure><img src="assets/projects/raster/poster-mockup-01.webp" alt="Poster-Mockup mit blau-orangefarbenem Rasterornament auf Stoffstruktur" /></figure>
+          <figure><img src="assets/projects/raster/poster-mockup-02.webp" alt="Poster-Mockup mit blau-weißem wiederholtem Rasterornament auf Stoffstruktur" /></figure>
+        </div>
+      </section>
+    </article>
+
+    <article class="case-study ps-case" data-project-view="postkarten-sticker" hidden>
+      <header class="ps-hero">
+        <div class="ps-hero-copy">
+          <p class="ps-kicker">ILLUSTRATION · POSTKARTEN · STICKER</p>
+          <h2>Postkarten mit Meinung.<br><em>Sticker mit Schnauze.</em></h2>
+          <p class="ps-summary">Eine freie Serie aus illustrierten Postkarten und Stickern, entstanden zwischen Skizze, Bauchgefühl und dem dringenden Bedürfnis, kleine Dinge auf Papier zu sagen. Die Motive sind verspielt, frech und manchmal ein bisschen daneben, aber nie zufällig: jede Karte und jeder Sticker macht aus einer Beobachtung ein druckbares Mini-Statement.</p>
+        </div>
+        <figure class="ps-hero-image"><img src="assets/projects/postkarten-sticker/hero.webp" alt="Sticker an einer Laterne im Stadtraum" /></figure>
+      </header>
+
+      <section class="ps-products">
+        <div class="ps-products-copy">
+          <p class="ps-section-no">01 — WERKSCHAU</p>
+          <h3>Gedruckt,<br><em>geklebt, verschickt.</em></h3>
+          <p>Die Postkarten und Sticker sind kleine freie Arbeiten und werden auf der Werkschau im Designshop verkauft. Was nach spontaner Illustration aussieht, bleibt trotzdem gestaltet: direkt, verspielt und mit genug Ecken, damit es nicht zu brav wird.</p>
+        </div>
+        <figure class="ps-product-image"><img src="assets/projects/postkarten-sticker/postkarten-sticker.webp" alt="Montage aus illustrierten Postkarten und Stickern" /></figure>
+      </section>
+    </article>
+
+    <article class="case-study sb-case" data-project-view="steinboc" hidden>
+      <header class="sb-hero">
+        <div class="sb-hero-copy">
+          <div class="sb-hero-panel">
+            <p class="sb-kicker">CORPORATE DESIGN · PHOTOGRAPHY · 3. SEMESTER</p>
+            <h2>Steinboc<br><em>fährt nicht<br>brav.</em></h2>
+            <p class="sb-summary">Steinboc kommt aus dem Schnee, aber nicht aus der stillen Postkartenwelt. Ich habe die Marke lauter gelesen: jung, direkt und voller Druck. Ein Auftritt für Kälte im Gesicht, Tempo im Körper und den kurzen Moment, in dem Kontrolle zur Nebensache wird.</p>
+          </div>
+        </div>
+        <figure class="sb-hero-image"><img src="assets/projects/steinboc/hero.webp" alt="Steinboc Plakat auf einem Skilift vor Bergkulisse" /></figure>
+      </header>
+
+      <section class="sb-attitude sb-pad">
+        <div class="sb-attitude-grid">
+          <div class="sb-attitude-copy">
+            <p class="sb-section-no">01 — HALTUNG</p>
+            <h3>Nicht leise.<br><em>Nicht bequem.</em></h3>
+            <p>Aus der Idee des Steinbocks entstand ein neues Zeichen mit eigener Haltung. Die Form liest sich wie ein Berg, daneben eine aufgehende oder untergehende Sonne: ein Moment zwischen Start und Ende, zwischen Ruhe und Risiko. Genau dort sitzt Steinboc: nicht romantisch, sondern schnell, roh und bereit für den Sprung.</p>
+          </div>
+          <figure class="sb-logo-mark"><img src="assets/projects/steinboc/logo-final.webp" alt="Steinboc Logo in Schwarz auf hellem Grund" /></figure>
+        </div>
+      </section>
+
+      <section class="sb-system sb-pad">
+        <div class="sb-system-head">
+          <div class="sb-system-title-card">
+            <p class="sb-section-no light">02 — SYSTEM</p>
+            <h3>Ein Design,<br><em>das Druck macht.</em></h3>
+          </div>
+          <p class="sb-system-copy">Das System arbeitet mit harten Kontrasten, grellem Blau, Schwarzflächen und Sätzen, die nicht höflich anklopfen. Aus Logo, Typografie, Bildsprache und Kampagne entsteht eine Marke, die auf Papier, Packaging und digitale Anwendungen übertragen werden kann, ohne an Geschwindigkeit zu verlieren.</p>
+        </div>
+        <figure class="sb-system-collage"><img src="assets/projects/steinboc/system-collage.webp" alt="Steinboc Corporate-Design-System mit Briefkopf, Karten, Umschlag und Stickern" /></figure>
+      </section>
+
+      <section class="sb-posters sb-pad">
+        <div class="sb-poster-head">
+          <p class="sb-section-no">03 — POSTER</p>
+          <h3>Ein System,<br><em>das Druck macht.</em></h3>
+          <p>Die Poster sind keine ruhigen Flächen. Sie schneiden an, überlagern und ziehen nach vorn. Typografie, Ski-Fotografie und Kampagnensätze werden zu kurzen visuellen Stößen: wie Fahrtwind, nur auf Papier.</p>
+        </div>
+        <div class="sb-poster-stage">
+          <div class="sb-poster-montage sb-fixed-poster-gif" aria-label="Steinboc Poster-Mockups als laufende Montage">
+            <figure class="is-active"><img src="assets/projects/steinboc/poster-scene-01.webp" alt="Steinboc Poster-Mockup Bis zur letzten Spur an einer Haltestelle" /></figure>
+            <figure><img src="assets/projects/steinboc/poster-scene-02.webp" alt="Steinboc Poster-Mockup Höher als gestern an einer Haltestelle" /></figure>
+            <figure><img src="assets/projects/steinboc/poster-scene-03.webp" alt="Steinboc Poster-Mockup Das Ende ist oben an einer Haltestelle" /></figure>
+            <figure><img src="assets/projects/steinboc/poster-scene-04.webp" alt="Steinboc Poster-Mockup Weiter als gedacht an einer Haltestelle" /></figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="sb-applications sb-pad">
+        <p class="sb-section-no">04 — MOCKUPS</p>
+        <div class="sb-application-head">
+          <h3>Auf allem,<br><em>was fährt.</em></h3>
+          <p>Steinboc soll sich anfühlen wie eine Marke für Leute, die Wintersport nicht nur gemütlich finden. Jung, schnell, ein bisschen überdreht und sehr sichtbar. Die Mockups zeigen, wie sich dieser Ton auf unterschiedliche Anwendungen überträgt, ohne leiser oder glatter zu werden.</p>
+        </div>
+        <div class="sb-running-showcase" aria-label="Steinboc Mockups und Fotografien als laufende Reihen">
+          <div class="sb-running-row">
+            <div class="sb-running-track">
+              <figure class="tall"><img src="assets/projects/steinboc/archive-mockups/mockup-archive-05.webp" alt="Blauer Steinboc Hoodie" /></figure>
+              <figure class="ski"><img src="assets/projects/steinboc/archive-mockups/mockup-archive-28.webp" alt="Steinboc Ski-Designs in Blau und Orange" /></figure>
+              <figure class="tall"><img src="assets/projects/steinboc/archive-mockups/mockup-archive-22.webp" alt="Schwarze Steinboc Dose" /></figure>
+              <figure class="wide"><img src="assets/projects/steinboc/archive-mockups/mockup-archive-24.webp" alt="Steinboc Fahnen-Mockup" /></figure>
+              <figure class="tall"><img src="assets/projects/steinboc/archive-mockups/mockup-archive-06.webp" alt="Oranger Steinboc Hoodie" /></figure>
+              <figure class="ski"><img src="assets/projects/steinboc/archive-mockups/mockup-archive-31.webp" alt="Steinboc Ski-Design groß" /></figure>
+              <figure class="square"><img src="assets/projects/steinboc/archive-mockups/mockup-archive-08.webp" alt="Steinboc Verpackung in Blau" /></figure>
+              <figure class="tall"><img src="assets/projects/steinboc/archive-mockups/mockup-archive-23.webp" alt="Orange Steinboc Dose" /></figure>
+              <figure class="tall"><img src="assets/projects/steinboc/archive-mockups/mockup-archive-05.webp" alt="" /></figure>
+              <figure class="ski"><img src="assets/projects/steinboc/archive-mockups/mockup-archive-28.webp" alt="" /></figure>
+              <figure class="tall"><img src="assets/projects/steinboc/archive-mockups/mockup-archive-22.webp" alt="" /></figure>
+              <figure class="wide"><img src="assets/projects/steinboc/archive-mockups/mockup-archive-24.webp" alt="" /></figure>
+              <figure class="tall"><img src="assets/projects/steinboc/archive-mockups/mockup-archive-06.webp" alt="" /></figure>
+              <figure class="ski"><img src="assets/projects/steinboc/archive-mockups/mockup-archive-31.webp" alt="" /></figure>
+              <figure class="square"><img src="assets/projects/steinboc/archive-mockups/mockup-archive-08.webp" alt="" /></figure>
+              <figure class="tall"><img src="assets/projects/steinboc/archive-mockups/mockup-archive-23.webp" alt="" /></figure>
+            </div>
+          </div>
+          <div class="sb-running-row reverse">
+            <div class="sb-running-track">
+              <figure class="tall"><img src="assets/projects/steinboc/archive-mockups/mockup-archive-33.webp" alt="Blaue Steinboc Dose" /></figure>
+              <figure class="ski"><img src="assets/projects/steinboc/archive-mockups/mockup-archive-26.webp" alt="Steinboc Ski-Reihe Schwarz Blau" /></figure>
+              <figure class="wide"><img src="assets/projects/steinboc/archive-mockups/mockup-archive-34.webp" alt="Steinboc Truck-Mockup" /></figure>
+              <figure class="tall"><img src="assets/projects/steinboc/archive-mockups/mockup-archive-06.webp" alt="Oranger Steinboc Hoodie" /></figure>
+              <figure class="ski"><img src="assets/projects/steinboc/archive-mockups/mockup-archive-30.webp" alt="Steinboc Ski-Reihe Orange Schwarz" /></figure>
+              <figure class="square"><img src="assets/projects/steinboc/archive-mockups/mockup-archive-08.webp" alt="Steinboc Packaging-Mockup" /></figure>
+              <figure class="ski"><img src="assets/projects/steinboc/archive-mockups/mockup-archive-27.webp" alt="Steinboc Ski-Reihe Blau Weiß" /></figure>
+              <figure class="tall"><img src="assets/projects/steinboc/archive-mockups/mockup-archive-22.webp" alt="Schwarze Steinboc Dose" /></figure>
+              <figure class="tall"><img src="assets/projects/steinboc/archive-mockups/mockup-archive-25.webp" alt="Steinboc Ski im Schnee" /></figure>
+              <figure class="ski"><img src="assets/projects/steinboc/archive-mockups/mockup-archive-32.webp" alt="Steinboc Ski-Reihe als Kampagnenmotiv" /></figure>
+              <figure class="tall"><img src="assets/projects/steinboc/archive-mockups/mockup-archive-33.webp" alt="" /></figure>
+              <figure class="ski"><img src="assets/projects/steinboc/archive-mockups/mockup-archive-26.webp" alt="" /></figure>
+              <figure class="wide"><img src="assets/projects/steinboc/archive-mockups/mockup-archive-34.webp" alt="" /></figure>
+              <figure class="tall"><img src="assets/projects/steinboc/archive-mockups/mockup-archive-06.webp" alt="" /></figure>
+              <figure class="ski"><img src="assets/projects/steinboc/archive-mockups/mockup-archive-30.webp" alt="" /></figure>
+              <figure class="square"><img src="assets/projects/steinboc/archive-mockups/mockup-archive-08.webp" alt="" /></figure>
+              <figure class="ski"><img src="assets/projects/steinboc/archive-mockups/mockup-archive-27.webp" alt="" /></figure>
+              <figure class="tall"><img src="assets/projects/steinboc/archive-mockups/mockup-archive-22.webp" alt="" /></figure>
+              <figure class="tall"><img src="assets/projects/steinboc/archive-mockups/mockup-archive-25.webp" alt="" /></figure>
+              <figure class="ski"><img src="assets/projects/steinboc/archive-mockups/mockup-archive-32.webp" alt="" /></figure>
+            </div>
+          </div>
+          <div class="sb-photo-runner">
+            <div class="sb-running-row photos">
+              <div class="sb-running-track">
+                <figure><img src="assets/projects/steinboc/archive-mockups/mockup-archive-03.webp" alt="Steinboc Nahaufnahme mit Skibrille" /></figure>
+                <figure class="wide"><img src="assets/projects/steinboc/archive-mockups/mockup-archive-09.webp" alt="Steinboc Gruppenfoto im Schnee" /></figure>
+                <figure><img src="assets/projects/steinboc/archive-mockups/mockup-archive-01.webp" alt="Steinboc Fotografie mit schwarzer Figur" /></figure>
+                <figure><img src="assets/projects/steinboc/archive-mockups/mockup-archive-14.webp" alt="Steinboc Skifotografie mit schwarzer Jacke" /></figure>
+                <figure><img src="assets/projects/steinboc/archive-mockups/mockup-archive-07.webp" alt="Steinboc Fotografie mit Skibrille und offenem Mund" /></figure>
+                <figure class="wide"><img src="assets/projects/steinboc/archive-mockups/mockup-archive-10.webp" alt="Steinboc Bergfoto mit Snowboarder" /></figure>
+                <figure><img src="assets/projects/steinboc/archive-mockups/mockup-archive-18.webp" alt="Steinboc Fotografie eines Steinbocks" /></figure>
+                <figure><img src="assets/projects/steinboc/archive-mockups/mockup-archive-02.webp" alt="" /></figure>
+                <figure><img src="assets/projects/steinboc/archive-mockups/mockup-archive-03.webp" alt="" /></figure>
+                <figure class="wide"><img src="assets/projects/steinboc/archive-mockups/mockup-archive-09.webp" alt="" /></figure>
+                <figure><img src="assets/projects/steinboc/archive-mockups/mockup-archive-01.webp" alt="" /></figure>
+                <figure><img src="assets/projects/steinboc/archive-mockups/mockup-archive-14.webp" alt="" /></figure>
+                <figure><img src="assets/projects/steinboc/archive-mockups/mockup-archive-07.webp" alt="" /></figure>
+                <figure class="wide"><img src="assets/projects/steinboc/archive-mockups/mockup-archive-10.webp" alt="" /></figure>
+                <figure><img src="assets/projects/steinboc/archive-mockups/mockup-archive-18.webp" alt="" /></figure>
+                <figure><img src="assets/projects/steinboc/archive-mockups/mockup-archive-02.webp" alt="" /></figure>
+              </div>
+            </div>
+            <div class="sb-running-row photos reverse">
+              <div class="sb-running-track">
+                <figure><img src="assets/projects/steinboc/archive-mockups/mockup-archive-20.webp" alt="Steinboc Skibrillen-Nahaufnahme" /></figure>
+                <figure><img src="assets/projects/steinboc/archive-mockups/mockup-archive-13.webp" alt="Steinboc Skifotografie in Blau und Orange" /></figure>
+                <figure class="wide"><img src="assets/projects/steinboc/archive-mockups/mockup-archive-11.webp" alt="Steinboc Fotografie am Berg mit Sofa" /></figure>
+                <figure><img src="assets/projects/steinboc/archive-mockups/mockup-archive-19.webp" alt="Steinboc Bergfotografie Schwarzweiß" /></figure>
+                <figure><img src="assets/projects/steinboc/archive-mockups/mockup-archive-15.webp" alt="Steinboc Skifotografie in Bewegung" /></figure>
+                <figure><img src="assets/projects/steinboc/archive-mockups/mockup-archive-21.webp" alt="Steinboc Logo im Stein" /></figure>
+                <figure><img src="assets/projects/steinboc/archive-mockups/mockup-archive-17.webp" alt="Steinboc Skifahrer auf blauer Fläche" /></figure>
+                <figure><img src="assets/projects/steinboc/archive-mockups/mockup-archive-12.webp" alt="" /></figure>
+                <figure><img src="assets/projects/steinboc/archive-mockups/mockup-archive-16.webp" alt="Steinboc Snowboard-Bewegung" /></figure>
+                <figure><img src="assets/projects/steinboc/archive-mockups/mockup-archive-20.webp" alt="" /></figure>
+                <figure><img src="assets/projects/steinboc/archive-mockups/mockup-archive-13.webp" alt="" /></figure>
+                <figure class="wide"><img src="assets/projects/steinboc/archive-mockups/mockup-archive-11.webp" alt="" /></figure>
+                <figure><img src="assets/projects/steinboc/archive-mockups/mockup-archive-19.webp" alt="" /></figure>
+                <figure><img src="assets/projects/steinboc/archive-mockups/mockup-archive-15.webp" alt="" /></figure>
+                <figure><img src="assets/projects/steinboc/archive-mockups/mockup-archive-21.webp" alt="" /></figure>
+                <figure><img src="assets/projects/steinboc/archive-mockups/mockup-archive-17.webp" alt="" /></figure>
+                <figure><img src="assets/projects/steinboc/archive-mockups/mockup-archive-12.webp" alt="" /></figure>
+                <figure><img src="assets/projects/steinboc/archive-mockups/mockup-archive-16.webp" alt="" /></figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sb-social sb-pad">
+        <div class="sb-social-copy">
+          <p class="sb-section-no light">05 — DIGITALE ANWENDUNG</p>
+          <h3>Digital,<br><em>aber nicht glatt.</em></h3>
+          <p>Die digitale Anwendung bleibt freigestellt und leicht. Handy-Mockup, Social-Posts und MacBook-Aufnahme sitzen in einem Abschnitt, damit Website und Social Media als zusammenhängendes System gelesen werden.</p>
+        </div>
+        <div class="sb-digital-board sb-digital-devices">
+          <figure class="sb-video-card sb-digital-laptop">
+            <video muted loop playsinline preload="auto" data-play-when-visible="true" aria-label="Steinboc Website-Aufnahme">
+              <source src="assets/projects/steinboc/macbook-screen-720.mp4" type="video/mp4" />
+            </video>
+            <figcaption>Website-Aufnahme</figcaption>
+          </figure>
+          <figure class="sb-video-card sb-digital-iphone-video">
+            <video muted loop playsinline preload="auto" data-play-when-visible="true" aria-label="Steinboc iPhone-Aufnahme">
+              <source src="assets/projects/steinboc/iphone-screen-0810.mp4" type="video/mp4" />
+            </video>
+            <figcaption>Social-Media-Aufnahme</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="sb-videos sb-pad">
+        <div class="sb-video-head">
+          <p class="sb-section-no">06 — IMAGEVIDEO</p>
+          <h3>Mehr Tempo.<br><em>Mehr Kante.</em></h3>
+          <p>Das Imagevideo führt die Haltung in Bewegung weiter: kurze Reize, dunkle Energie, schneller Rhythmus. Steinboc wirkt nicht wie ein ruhiger Wintersportmoment, sondern wie ein Impuls nach vorn.</p>
+        </div>
+        <figure class="sb-video-card sb-imagevideo">
+          <video muted loop playsinline preload="metadata" data-play-when-visible="true" aria-label="Steinboc Imagevideo">
+            <source src="assets/projects/steinboc/imagevideo-720.mp4" type="video/mp4" />
+          </video>
+          <figcaption>Imagevideo</figcaption>
+        </figure>
+      </section>
+
+    </article>
+
+    <article class="case-study ns-case" data-project-view="neutral-sprache" hidden>
+      <header class="ns-hero">
+        <div class="ns-hero-copy">
+          <p class="ns-kicker">TYPOGRAFIE · EDITORIAL · 2. SEMESTER</p>
+          <h2>Neutralisierte<br>Sprachfläche?<br><em>Schön wär's.</em></h2>
+          <p class="ns-summary">Ein Magazin über Dialekt, Hochdeutsch und die kleine Frechheit, dass Sprache nie einfach nur "korrekt" ist. Schwäbisch steht hier nicht mit Mütze in der Ecke, sondern mitten im Satz und sagt: I bin au no do.</p>
+        </div>
+        <figure class="ns-hero-image"><img src="assets/projects/neutral-sprache/cover-hero.webp" alt="Buchcover Neutralisierte Sprachfläche als Mockup auf Beton" /></figure>
+      </header>
+
+      <section class="ns-statement ns-pad">
+        <p class="ns-section-no ns-section-label">01 — HALTUNG</p>
+        <div class="ns-statement-grid">
+          <h3 class="ns-section-title">Hochdeutsch trägt Krawatte.<br><em>Dialekt kommt barfuß rein.</em></h3>
+          <div class="ns-copy">
+            <p>Sprache ist nie neutral. Sie klingt nach Ort, nach Körper, nach Zuhause und manchmal auch nach jemandem, der im Formular bitte kurz Hochdeutsch spielen soll.</p>
+            <p>Im Magazin wird schwäbischer Dialekt nicht übersetzt oder glattgebügelt, sondern typografisch laut gestellt: Buchstaben dehnen sich, Raster geraten ins Stolpern, Wörter bekommen Gewicht. Aus Aussprache wird Gestaltung.</p>
+            <p>Das Projekt fragt, wer im öffentlichen Raum sprechen darf und wer nur als Abweichung gilt. Dialekt steht hier nicht am Rand. Er kommt rein, setzt sich breit hin und sagt: Neutral war hier sowieso nichts.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="ns-magazine">
+        <div class="ns-magazine-copy">
+          <p class="ns-section-no ns-section-label">02 — MAGAZIN</p>
+          <h3 class="ns-section-title">Ein Alphabet<br><em>mit leichtem Eigensinn.</em></h3>
+          <p>Die Doppelseiten benehmen sich nicht immer nach DIN-Norm, was ihnen sehr gut steht. Dialekt sitzt hier nicht brav im Satzspiegel, sondern drückt gegen Raster, Ränder und Regeln. Mal wird Schrift laut, mal stolpert sie leise weiter.</p>
+        </div>
+        <div class="ns-carousel" data-carousel>
+          <div class="ns-carousel-viewport">
+            <div class="ns-carousel-track" data-carousel-track>
+              <figure><img src="assets/projects/neutral-sprache/magazine-01.webp" alt="Magazindoppelseite mit Index" /></figure>
+              <figure><img src="assets/projects/neutral-sprache/magazine-02.webp" alt="Magazindoppelseite mit gelber Hallo-Seite" /></figure>
+              <figure><img src="assets/projects/neutral-sprache/magazine-03.webp" alt="Gelbe Magazindoppelseite mit dem Wort Dialekt" /></figure>
+              <figure><img src="assets/projects/neutral-sprache/magazine-04.webp" alt="Magazindoppelseite mit großen Buchstabenformen" /></figure>
+              <figure><img src="assets/projects/neutral-sprache/magazine-05.webp" alt="Magazindoppelseite mit typografischem Text" /></figure>
+              <figure><img src="assets/projects/neutral-sprache/magazine-06.webp" alt="Gelbe Magazindoppelseite mit typografischer Aussage über Dialekt" /></figure>
+              <figure><img src="assets/projects/neutral-sprache/magazine-07.webp" alt="Magazindoppelseite mit wiederholtem Wort Sprache" /></figure>
+              <figure><img src="assets/projects/neutral-sprache/magazine-08.webp" alt="Magazindoppelseite mit typografischem Textblock" /></figure>
+              <figure><img src="assets/projects/neutral-sprache/magazine-09.webp" alt="Magazindoppelseite mit gelber Textseite" /></figure>
+              <figure><img src="assets/projects/neutral-sprache/magazine-10.webp" alt="Magazindoppelseite mit kurzem Dialekttext" /></figure>
+            </div>
+          </div>
+          <div class="ns-carousel-controls" aria-label="Magazinseiten wechseln">
+            <button type="button" data-carousel-prev aria-label="Vorherige Magazinseite">‹</button>
+            <span><b data-carousel-current>01</b>/10</span>
+            <button type="button" data-carousel-next aria-label="Nächste Magazinseite">›</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="ns-poster ns-pad">
+        <p class="ns-section-no ns-section-label">03 — PLAKATE</p>
+        <div class="ns-poster-head">
+          <h3 class="ns-section-title">Sprache als Fläche.<br><em>Herkunft als Spur.</em></h3>
+          <p>Die Plakate übersetzen das Magazin in ein strengeres System: Raster, Wiederholung, Schwarz und Gelb. Die Sprache bleibt trotzdem nicht still. Sie schiebt sich durch die Fläche und macht sichtbar, dass Neutralität oft nur wie Ordnung aussieht.</p>
+        </div>
+        <div class="ns-poster-grid">
+          <figure><img src="assets/projects/neutral-sprache/poster-mockup-01.webp" alt="Gelbes Plakatmockup Neutralisierte Sprachfläche" /></figure>
+          <figure><img src="assets/projects/neutral-sprache/poster-mockup-02.webp" alt="Schwarzes Plakatmockup Heimat klingt nicht neutral" /></figure>
+        </div>
+      </section>
+
+      <section class="ns-website ns-pad">
+        <div class="ns-website-head">
+          <p class="ns-section-no ns-section-label">04 — WEBSITE</p>
+          <h3 class="ns-section-title">Sprache scrollt<br><em>durch den Raum.</em></h3>
+          <p>Die Website führt spielerisch durch das Projekt und macht die Inhalte leichter zugänglich. Sie wirkt bewusst freundlich und nahbar: Dialekt, Herkunft und Gestaltung werden nicht streng erklärt, sondern wie ein Gespräch geöffnet - mit Bewegung, kleinen Momenten und Informationen, die neugierig machen, ohne zu überfordern.</p>
+        </div>
+        <figure class="ns-website-visual">
+          <img class="ns-website-fallback" src="assets/projects/neutral-sprache/website-recording-poster.webp" alt="" aria-hidden="true" />
+          <video autoplay muted loop playsinline preload="auto" data-play-when-visible="true" poster="assets/projects/neutral-sprache/website-recording-poster.webp" aria-label="Animierte Website-Aufnahme im freigestellten MacBook-Mockup">
+            <source src="assets/projects/neutral-sprache/website-recording-stable.mp4" type="video/mp4" />
+          </video>
+        </figure>
+      </section>
+
+    </article>
+
+    <article class="case-study zw-case" data-project-view="zwergenwiese" hidden>
+      <header class="zw-hero" id="zw-brief">
+        <div class="zw-hero-copy">
+          <p class="zw-kicker">BRANDING · PACKAGING · ILLUSTRATION · FREIE ARBEIT</p>
+          <h2>Frucht im Glas.<br><em>Charakter</em> außenrum.</h2>
+          <p class="zw-summary">Ein Rebrand mit Picknickgefühl statt Reformhaus-Klischee: lautere Früchte, klare Sorten und ein System, das im Regal sofort hängen bleibt.</p>
+        </div>
+        <figure class="zw-hero-image"><img src="assets/projects/zwergenwiese/picnic.webp" alt="Picknickszene mit Zwergenwiese Gläsern und schwarzer Hand" /></figure>
+      </header>
+
+      <section class="zw-intro zw-pad">
+        <p class="zw-section-no">01 — AUSGANGSLAGE</p>
+        <div class="zw-intro-grid">
+          <h3>Bio darf auch ein bisschen frech sein.</h3>
+          <div class="zw-two-copy"><p>Zwergenwiese bringt Herkunft, Haltung und einen Namen mit, der ohnehin schon Bilder im Kopf macht. Genau diese Eigenheit sollte endlich auch visuell spürbar werden.</p><p>Darum wurde nichts glattgebügelt. Stattdessen: handgezeichnete Früchte, Farben mit Wiedererkennungswert und ein grünes Karo zwischen Picknickdecke, Küchentisch und Supermarktregal.</p></div>
+        </div>
+      </section>
+
+      <section class="zw-logo-band" id="zw-logo">
+        <div><p class="zw-section-no light">02 — LOGO</p><h3>Eine Mütze reicht.</h3><p>Der ganze Zwerg steckt jetzt in einer einzigen Mütze. Locker gezeichnet, leicht schief und bewusst nicht klinisch perfekt – klein genug für den Deckel, stark genug für die ganze Marke.</p></div>
+        <img src="assets/projects/zwergenwiese/dwarf-logo.webp" alt="Reduziertes Zwergenwiese Logo" />
+      </section>
+
+      <section class="zw-colors zw-pad" id="zw-colors">
+        <p class="zw-section-no">03 — FARBWELT</p>
+        <div class="zw-title-row"><h3>Drei Sorten.<br>Drei Hauptrollen.</h3><p>Aprikose leuchtet warm, Sauerkirsche setzt den roten Akzent und Birne wird richtig grün. Markengrün und Creme halten alles zusammen, ohne die Sorten leise zu machen.</p></div>
+        <div class="zw-color-grid" aria-label="Vollständige Farbpalette">
+          <div class="label-apricot"><span>Aprikose <b>#EF9D70</b></span></div>
+          <div class="label-cherry"><span>Sauerkirsche <b>#C62828</b></span></div>
+          <div class="label-pear"><span>Birne <b>#79A83B</b></span></div>
+          <div class="label-pink"><span>Rosa <b>#EEB7C5</b></span></div>
+          <div class="label-blue"><span>Blau <b>#A8D7E6</b></span></div>
+          <div class="label-lilac"><span>Lila <b>#C8BCE5</b></span></div>
+          <div class="brand-green"><span>Markengrün <b>#15572C</b></span></div>
+          <div class="brand-cream"><span>Creme <b>#E6DFD1</b></span></div>
+        </div>
+      </section>
+
+      <section class="zw-products zw-pad">
+        <p class="zw-section-no">04 — PRODUKTFAMILIE</p>
+        <div class="zw-title-row"><h3>Gleiches System.<br>Eigener Geschmack.</h3><p>Die Form bleibt vertraut, die Sorte bekommt Persönlichkeit. So wirkt alles wie eine Familie – aber kein Glas wie das andere.</p></div>
+        <div class="zw-product-grid">
+          <figure class="apricot"><img src="assets/projects/zwergenwiese/apricot-jar.webp" alt="Aprikosen Glas" /><figcaption><strong>Aprikosen</strong><small>halbe Frucht</small></figcaption></figure>
+          <figure class="cherry"><img src="assets/projects/zwergenwiese/cherry-jar.webp" alt="Sauerkirschen Glas" /><figcaption><strong>Sauerkirschen</strong><small>entsteint</small></figcaption></figure>
+          <figure class="pear"><img src="assets/projects/zwergenwiese/pear-jar.webp" alt="Birnen Glas" /><figcaption><strong>Birnen</strong><small>halbe Frucht</small></figcaption></figure>
+        </div>
+      </section>
+
+      <section class="zw-packaging zw-pad" id="zw-packaging">
+        <p class="zw-section-no">05 — VERPACKUNG & MERCH</p>
+        <h3>Vom Glas bis zur Box:<br>alles gehört zusammen.</h3>
+        <div class="zw-mosaic">
+          <figure><img src="assets/projects/zwergenwiese/box.webp" alt="Versandbox" /></figure>
+          <figure><img src="assets/projects/zwergenwiese/tote-logo.webp" alt="Stofftasche mit Logo" /></figure>
+          <figure><img src="assets/projects/zwergenwiese/tote-illustration.webp" alt="Stofftasche mit Obstnetz-Illustration" /></figure>
+          <figure class="zw-tissue-sticker"><img src="assets/projects/zwergenwiese/logo-system.webp" alt="Zwergenwiese Seidenpapier mit Sticker" /></figure>
+        </div>
+      </section>
+
+      <section class="zw-campaign zw-pad" id="zw-campaign">
+        <p class="zw-section-no">06 — KAMPAGNE</p>
+        <h3>Kein Studio-Bio.<br>Lieber Wiese, Sonne, Hände.</h3>
+        <div class="zw-campaign-grid"><figure><img src="assets/projects/zwergenwiese/picnic.webp" alt="Picknick mit Zwergenwiese Gläsern" /></figure><figure><img src="assets/projects/zwergenwiese/spoon.webp" alt="Gestapelte Gläser mit Löffel" /></figure></div>
+        <div class="zw-bottom-images">
+          <figure><img src="assets/projects/zwergenwiese/three-jars-hand.webp" alt="Drei Zwergenwiese Gläser in den Händen einer schwarzen Person" /></figure>
+          <figure><img src="assets/projects/zwergenwiese/pear-net.webp" alt="Birnenglas in einem grünen Einkaufsnetz auf einer Wiese" /></figure>
+        </div>
+      </section>
+
+    </article>
+
+    <article class="case-study zw-case city-case" data-project-view="stadt-kampagne" hidden>
+      <header class="zw-hero">
+        <div class="zw-hero-copy">
+          <p class="zw-kicker">CAMPAIGN · TYPOGRAPHY · KONZEPT · ARCHIV</p>
+          <h2>Eine Stadt,<br><em>die man mit den Augen liest.</em></h2>
+          <p class="zw-summary">Eine alternative Stadtkampagne als Blickexperiment: Der Satz liegt nicht einfach auf dem Plakat, er wird von den Augen abgetastet. Aus Lesen wird eine Spur, aus Aufmerksamkeit ein Muster, aus Typografie fast so etwas wie ein Wärmebild der Wahrnehmung.</p>
+        </div>
+        <figure class="zw-hero-image"><img src="assets/projects/stadt-kampagne/hero.webp" alt="Stadtkampagnenplakat mit Eye-Tracking-Flecken in einem Schaufenster" /></figure>
+      </header>
+
+      <section class="zw-intro zw-pad">
+        <p class="zw-section-no">01 — AUSGANGSLAGE</p>
+        <div class="zw-intro-grid">
+          <h3>Ein Plakat, das nicht nur angeschaut wird, sondern zurückzeigt, wie wir schauen.</h3>
+          <div class="zw-two-copy"><p>Das Konzept übersetzt Eye Tracking in eine visuelle Sprache: Fixierungen, Sprünge und Suchbewegungen legen sich als farbige Flecken über die Typografie. Der eigentliche Inhalt bleibt lesbar, aber der Weg dorthin wird genauso wichtig wie der Satz selbst.</p><p>Für die breite Masse war die Idee am Ende zu abstrakt und zu erklärungsbedürftig. Im Archiv funktioniert sie genau deshalb gut: als konzeptueller Entwurf, der zeigt, wie Stadt, Schrift und Wahrnehmung miteinander reagieren, wenn ein Plakat nicht nur Botschaft ist, sondern auch Messfläche für Aufmerksamkeit.</p></div>
+        </div>
+      </section>
+
+      <section class="zw-campaign zw-pad city-montage">
+        <p class="zw-section-no">02 — MONTAGE</p>
+        <h3>Ein Entwurf zwischen Stadtraum, Lesebewegung und kontrolliertem visuellen Chaos.</h3>
+        <figure><img src="assets/projects/stadt-kampagne/montage.gif" alt="Animierte Montage aus zwei Stadtkampagnen-Entwürfen mit Eye-Tracking-Flecken" /></figure>
+      </section>
+    </article>
+
+    <article class="case-study zw-case coming-soon-case" data-project-view="studierendenwerk" hidden>
+      <header class="zw-hero">
+        <div class="zw-hero-copy">
+          <p class="zw-kicker">POSTER DESIGN · WETTBEWERB · ARCHIV</p>
+          <h2>40. Plakatwettbewerb<br><em>Studierendenwerk</em></h2>
+          <p class="zw-summary">Noch darf das Plakat nicht raus in die Welt. Bis die Preisverleihung vorbei ist, bleibt hier nur ein kontrollierter Blick durchs Milchglas: verpixelt, rot, ein bisschen geheimnisvoll - und gerade konkret genug, um die visuelle Richtung anzudeuten.</p>
+        </div>
+        <figure class="zw-hero-image coming-soon-visual"><img src="assets/projects/studierendenwerk/comingsoon.webp" alt="Verpixelter Coming-soon-Teaser fuer den 40. Plakatwettbewerb Studierendenwerk" /></figure>
+      </header>
+
+      <section class="zw-intro zw-pad coming-soon-note">
+        <p class="zw-section-no">COMING SOON</p>
+        <div class="zw-intro-grid">
+          <h3>Noch nicht ganz öffentlich.<br>Aber schon im Archiv.</h3>
+          <div class="zw-two-copy"><p>Der 40. Plakatwettbewerb des Studierendenwerks ist schon Teil des Archivs, aber noch nicht Teil der Öffentlichkeit. Deshalb zeigt diese Seite nicht das Ergebnis, sondern die Spannung davor: Formen, Farben und Atmosphäre, ohne das Motiv preiszugeben.</p><p>Der Teaser funktioniert wie ein temporärer Vorhang. Er markiert den Platz des Projekts, erklärt warum noch nichts vollständig sichtbar ist und hält die Arbeit trotzdem im Portfolio präsent.</p></div>
+        </div>
+      </section>
+    </article>
+
+    <article class="case-study zw-case democracy-case" data-project-view="demokratie-feiern" hidden>
+      <header class="zw-hero">
+        <div class="zw-hero-copy">
+          <p class="zw-kicker">CAMPAIGN · POSTER SERIES · ART DIRECTION · STUTTGART</p>
+          <h2>Ohne Vielfalt<br><em>wird Stuttgart leer.</em></h2>
+          <p class="zw-summary">Eine Plakatserie mit Demokratie feiern gegen das Wegdrücken von Menschen aus dem Stadtbild. Die Kampagne macht sichtbar, was rechte Parolen gern ausblenden: Migration steht nicht daneben, sie hält Stuttgart mit am Laufen, spricht mit, arbeitet mit, lebt mit.</p>
+        </div>
+        <figure class="zw-hero-image"><img src="assets/projects/demokratie-feiern/hero.webp" alt="City-Light-Plakat Ohne Vielfalt verliert Stuttgart seine Stimme an einer Stuttgarter Haltestelle" /></figure>
+      </header>
+
+      <section class="zw-intro zw-pad">
+        <p class="zw-section-no">01 — AUSGANGSLAGE</p>
+        <div class="zw-intro-grid">
+          <h3>Was bleibt von einer Stadt, wenn man einen Teil von ihr unsichtbar macht?</h3>
+          <div class="zw-two-copy"><p>Das Projekt entstand aus Gesprächen über den gesellschaftlichen Rechtsruck und die Frage, was Gestaltung dagegen tun kann. Die Antwort musste nicht laut im Sinne von kompliziert sein, sondern klar genug für den öffentlichen Raum: ein Plakat, ein Satz, eine Leerstelle, die hängen bleibt.</p><p>Für mich ist das Thema persönlich. Meine Familie kommt aus Indien, ich habe selbst Migrationsgeschichte. Die Kampagne ist deshalb kein neutrales Kommentarstück, sondern eine sichtbare Gegenposition: Wir sind hier, wir gehören dazu, und wir lassen uns nicht aus dem Bild retuschieren.</p></div>
+        </div>
+      </section>
+
+      <section class="zw-logo-band democracy-statement">
+        <div><p class="zw-section-no light">02 — IDEE</p><h3>Wenn Vielfalt fehlt,<br>fehlt mehr als Farbe.</h3><p>Die Kampagne nimmt die Debatte ums Stadtbild wörtlich und dreht sie um: Was passiert, wenn man Menschen mit Migrationsgeschichte wirklich aus diesem Bild entfernt? Die Antwort ist keine Theorie, sondern sofort sichtbar. Stuttgart wirkt nicht sauberer, nicht schöner, nicht geordneter. Stuttgart wirkt leer.</p></div>
+      </section>
+
+      <section class="zw-campaign zw-pad democracy-posters">
+        <p class="zw-section-no">03 — PLAKATSERIE</p>
+        <h3>Leere Silhouetten.<br>Volle Aussage.</h3>
+        <figure><img src="assets/projects/demokratie-feiern/poster-fence-web.webp" alt="Drei Plakate der Demokratie-feiern-Kampagne an einem Zaun" /></figure>
+      </section>
+
+      <section class="zw-intro zw-pad democracy-context">
+        <p class="zw-section-no">04 — UMSETZUNG</p>
+        <div class="zw-intro-grid">
+          <h3>Fotografiert in Stuttgart.<br>Gedacht für den öffentlichen Raum.</h3>
+          <div class="zw-two-copy"><p>Alle Fotografien entstanden im Stuttgarter Stadtraum. Die ausgesparten Figuren sind die lauteste Information im Motiv: Körper fehlen, Gespräche fehlen, Bewegung fehlt. Die Leere steht stellvertretend für das, was auch in Kliniken, Kitas, Pflege, Unternehmen und Alltag wegbrechen würde.</p><p>Demokratie feiern unterstützt Projekt und Botschaft. Konzept, Art Direction, Gestaltung, fotografische Grundlage und Umsetzung stammen von mir. Das System wächst weiter: Neben der Plakatserie kommen Instagram-Posts dazu, die dieselbe Frage aus der Straße direkt in den Feed tragen.</p></div>
+        </div>
+      </section>
+
+      <section class="zw-campaign zw-pad democracy-coming">
+        <p class="zw-section-no">05 — NEXT</p>
+        <h3>Mehr Stadtbild folgt.<br>Auch im Feed.</h3>
+        <p>Die Kampagne ist als offene Serie gedacht. Weitere Motive und Social-Media-Formate sind bereits angelegt. Die Straße war der Anfang; als Nächstes wandert die Frage in den Feed, dorthin, wo Debatten oft schneller, härter und sichtbarer werden.</p>
+      </section>
+    </article>
+
+    <article class="case-study ly-case" data-project-view="lunar-year" hidden>
+      <header class="ly-hero">
+        <div class="ly-hero-copy">
+          <p class="ly-kicker">POSTER DESIGN · FREIE ARBEIT · SERIE</p>
+          <h2>Lunar Year —<br><em>Zwölf Jahre.<br>Zwölf Charaktere.</em></h2>
+          <p class="ly-summary">Angefangen hat alles ziemlich unspektakulär. Ich bin über ein Bild von einem Einhorn gestolpert und fand spannend, wie stark allein ein einzelnes Tier eine ganze Stimmung transportieren kann. Irgendwann landete ich beim chinesischen Tierkreis. Zwölf Tiere, zwölf Jahre und jedes davon mit einer eigenen Bedeutung. Daraus entstand die Idee, diese Symbolik nicht historisch oder traditionell zu zeigen, sondern als plakative Editorial-Serie neu zu interpretieren.</p>
+        </div>
+        <figure class="ly-hero-image"><img src="assets/projects/lunar-year/hero-horse-mockup.webp" alt="Schräg liegendes Year of the Horse Poster auf Beton" /></figure>
+      </header>
+
+      <section class="ly-overview ly-pad">
+        <p class="ly-section-no">01 — DIE MOTIVE</p>
+        <h3>Zwölf Jahre.<br><em>Immer ein anderer Charakter.</em></h3>
+        <p>Der chinesische Tierkreis funktioniert als Zwölfjahreszyklus. Jedes Jahr ist einem Tier zugeordnet und bringt bestimmte Eigenschaften, Stimmungen und Vorstellungen mit. Das Pferd steht für Energie und Freiheit, die Ziege für Feingefühl und Ruhe, die Affe für Neugier und Erfindergeist. Genau diese Unterschiede sind das Herz der Serie. Rahmen, Schriftzeichen und Typografie halten alles zusammen. Den Ton gibt jedes Tier selbst an.</p>
+        <div class="ly-triptych"><figure><img src="assets/projects/lunar-year/horse.webp" alt="Year of the Horse Poster" /></figure><figure><img src="assets/projects/lunar-year/goat.webp" alt="Year of the Goat Poster" /></figure><figure><img src="assets/projects/lunar-year/monkey.webp" alt="Year of the Monkey Poster" /></figure></div>
+      </section>
+
+      <section class="ly-feature ly-pad">
+        <figure><img src="assets/projects/lunar-year/horse.webp" alt="Year of the Horse Poster" /></figure>
+        <div class="ly-feature-copy"><span class="ly-symbol">馬</span><p class="ly-label">PFERD · 2026</p><h3>Year of the Horse</h3><p>2026 steht im Zeichen des Pferdes. Ein Jahr, das mit Freiheit, Energie und Vorwärtsdrang verbunden wird. Genau deshalb darf hier nichts stillstehen. Die Pferde schießen aus verschiedenen Richtungen durchs Format, überlagern sich und wirken wie einzelne Frames einer Bewegung. Schwarz macht die Bühne auf, Rosa nimmt dem Ganzen die Härte.</p></div>
+      </section>
+
+      <section class="ly-feature ly-feature-reverse ly-pad">
+        <div class="ly-feature-copy"><span class="ly-symbol">羊</span><p class="ly-label">ZIEGE · 2027</p><h3>Year of the Goat</h3><p>2027 gehört der Ziege. Dieses Jahr wird mit Feingefühl, Kreativität und Harmonie verbunden. Also dreht das Poster die Lautstärke runter, ohne langweilig zu werden. Zwei Ziegen spiegeln sich, halten die Mitte und bringen Ruhe ins Format. Das kräftige Rot greift Glück und festliche Energie auf und sorgt dafür, dass das Motiv trotzdem hängen bleibt.</p></div>
+        <figure><img src="assets/projects/lunar-year/goat.webp" alt="Year of the Goat Poster" /></figure>
+      </section>
+
+      <section class="ly-feature ly-pad">
+        <figure><img src="assets/projects/lunar-year/monkey.webp" alt="Year of the Monkey Poster" /></figure>
+        <div class="ly-feature-copy"><span class="ly-symbol">猴</span><p class="ly-label">AFFE · 2028</p><h3>Year of the Monkey</h3><p>2028 ist das Jahr des Affen. Es steht für Neugier, Cleverness und die Fähigkeit, immer noch einen anderen Weg zu finden. Genau so verhält sich auch das Motiv. Die Affen klettern übereinander, hängen im Format und ziehen mit ihren Schwänzen neue Linien durch die Komposition. Das tiefe Weinrot hält alles zusammen, ohne die Spielfreude auszubremsen.</p></div>
+      </section>
+    </article>
+  </div>
+
+  <script src="script.js"></script>
+<script>
+  const walksafePrototype = document.getElementById('walksafePrototype');
+  if (walksafePrototype) {
+    const cover = walksafePrototype.parentElement?.querySelector('.ws-phone-cover');
+    walksafePrototype.playbackRate = 0.82;
+    walksafePrototype.addEventListener('loadedmetadata', () => { walksafePrototype.playbackRate = 0.82; });
+    const revealPrototype = () => {
+      if (!cover) return;
+      requestAnimationFrame(() => requestAnimationFrame(() => cover.classList.add('is-hidden')));
+    };
+    walksafePrototype.addEventListener('playing', revealPrototype, { once:true });
+  }
+</script>
+</body>
+</html>
