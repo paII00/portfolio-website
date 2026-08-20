@@ -6710,7 +6710,7 @@ article.ps-case header.ps-hero .ps-hero-copy > p.ps-kicker{
     position:absolute;
     top:0;
     bottom:0;
-    width:55vw;
+    width:22vw;
     background-image:url("assets/flowers/flower-frame.webp");
     background-size:auto 100%;
     background-repeat:no-repeat;
@@ -6768,6 +6768,51 @@ article.ps-case header.ps-hero .ps-hero-copy > p.ps-kicker{
     margin-top:16px !important;
     font-size:10px !important;
   }
+
+  .about-snapshot{
+    overflow:hidden !important;
+  }
+
+  .about-snapshot-grid{
+    grid-template-columns:1fr !important;
+    grid-template-rows:auto !important;
+    min-height:auto !important;
+    padding:104px 18px 72px !important;
+    row-gap:34px !important;
+  }
+
+  .about-snapshot .about-heading-copy,
+  .about-snapshot .about-bio{
+    width:100% !important;
+    max-width:none !important;
+    justify-self:stretch !important;
+    transform:none !important;
+  }
+
+  .about-snapshot .about-intro-text{
+    width:100% !important;
+    max-width:none !important;
+  }
+
+  .about-snapshot .about-bio{
+    font-size:14px !important;
+    line-height:1.62 !important;
+    overflow-wrap:break-word;
+  }
+
+  .about-photo-top,
+  .about-photo-bottom{
+    width:min(78vw,340px) !important;
+    justify-self:center !important;
+  }
+
+  .about-photo-top{
+    transform:rotate(3deg) !important;
+  }
+
+  .about-photo-bottom{
+    transform:rotate(-6deg) !important;
+  }
 }
 
 @media(max-width:520px){
@@ -6784,5 +6829,14 @@ article.ps-case header.ps-hero .ps-hero-copy > p.ps-kicker{
 
   .envelope-hint{
     bottom:clamp(30px,5svh,52px) !important;
+  }
+
+  .envelope-hero::before,
+  .envelope-hero::after{
+    width:18vw;
+  }
+
+  .about-snapshot .about-bio{
+    font-size:13.5px !important;
   }
 }
