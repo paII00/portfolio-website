@@ -19,6 +19,7 @@ if (clock) {
 const modal = document.querySelector('.project-modal');
 const modalTitle = document.getElementById('modal-title');
 const modalClose = document.querySelector('.modal-close');
+const projectTopButton = document.querySelector('.project-top-button');
 const projectViews = document.querySelectorAll('[data-project-view]');
 
 const closeProject = () => {
@@ -70,6 +71,9 @@ if (modal && modalClose) {
     });
   });
   modalClose.addEventListener('click', closeProject);
+  projectTopButton?.addEventListener('click', () => {
+    modal.scrollTo({ top: 0, behavior: 'smooth' });
+  });
   modal.querySelectorAll('.case-back').forEach((button) => button.addEventListener('click', closeProject));
   document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape' && modal.classList.contains('open')) closeProject();
