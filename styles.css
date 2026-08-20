@@ -6696,3 +6696,93 @@ article.ps-case header.ps-hero .ps-hero-copy > p.ps-kicker{
   text-transform:uppercase !important;
   margin:0 0 38px !important;
 }
+
+/* 2026-08-20: mobile landing hero only — keep artwork natural */
+@media(max-width:800px){
+  .site-header nav{
+    font-size:clamp(9px,2.75vw,11px) !important;
+    letter-spacing:.08em !important;
+  }
+
+  .envelope-hero::before,
+  .envelope-hero::after{
+    content:"";
+    position:absolute;
+    top:0;
+    bottom:0;
+    width:55vw;
+    background-image:url("assets/flowers/flower-frame.webp");
+    background-size:auto 100%;
+    background-repeat:no-repeat;
+    pointer-events:none;
+    z-index:1;
+  }
+
+  .envelope-hero::before{
+    left:0;
+    background-position:left center;
+  }
+
+  .envelope-hero::after{
+    right:0;
+    background-position:right center;
+  }
+
+  .hero-flower-frame{
+    display:none !important;
+  }
+
+  .mail-scene{
+    width:112vw !important;
+    height:72svh !important;
+    transform:translate(-4vw,-5svh) scale(.92) !important;
+  }
+
+  .closed-state,
+  .open-state{
+    transform:scale(1.16) !important;
+    transform-origin:center 57% !important;
+  }
+
+  .mail-scene.is-open .mail-letter{
+    transform:translate3d(0,-11%,0) scale(1.01) !important;
+  }
+
+  .hero-reveal{
+    left:50% !important;
+    bottom:clamp(68px,8svh,92px) !important;
+    width:min(88vw,520px) !important;
+    max-width:88vw !important;
+    transform:translateX(-50%) !important;
+    text-align:center !important;
+  }
+
+  .hero-description{
+    margin:0 auto !important;
+    max-width:100% !important;
+    font-size:clamp(16px,4.7vw,19px) !important;
+    line-height:1.16 !important;
+  }
+
+  .hero-scroll{
+    margin-top:16px !important;
+    font-size:10px !important;
+  }
+}
+
+@media(max-width:520px){
+  .site-header nav{
+    font-size:clamp(8.5px,2.55vw,10px) !important;
+    letter-spacing:.065em !important;
+  }
+
+  .mail-scene{
+    width:110vw !important;
+    height:70svh !important;
+    transform:translate(-4vw,-5svh) scale(.92) !important;
+  }
+
+  .envelope-hint{
+    bottom:clamp(30px,5svh,52px) !important;
+  }
+}
