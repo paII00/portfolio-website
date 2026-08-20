@@ -6706,34 +6706,37 @@ article.ps-case header.ps-hero .ps-hero-copy > p.ps-kicker{
 
   .envelope-hero::before,
   .envelope-hero::after{
-    content:"";
-    position:absolute;
-    top:0;
-    bottom:0;
-    width:42vw;
-    background-image:url("assets/flowers/flower-frame.webp");
-    background-size:auto 100%;
-    background-repeat:no-repeat;
-    pointer-events:none;
-    z-index:1;
-  }
-
-  .envelope-hero::before{
-    left:0;
-    background-position:left center;
-    -webkit-mask-image:linear-gradient(to right,#000 0 54%,rgba(0,0,0,.72) 72%,transparent 100%);
-    mask-image:linear-gradient(to right,#000 0 54%,rgba(0,0,0,.72) 72%,transparent 100%);
-  }
-
-  .envelope-hero::after{
-    right:0;
-    background-position:right center;
-    -webkit-mask-image:linear-gradient(to left,#000 0 54%,rgba(0,0,0,.72) 72%,transparent 100%);
-    mask-image:linear-gradient(to left,#000 0 54%,rgba(0,0,0,.72) 72%,transparent 100%);
+    content:none !important;
   }
 
   .hero-flower-frame{
-    display:none !important;
+    display:block !important;
+    width:100% !important;
+    height:100% !important;
+    object-fit:cover !important;
+    object-position:center center !important;
+    -webkit-mask-image:linear-gradient(
+      to right,
+      #000 0%,
+      #000 28%,
+      rgba(0,0,0,.28) 39%,
+      transparent 47%,
+      transparent 53%,
+      rgba(0,0,0,.28) 61%,
+      #000 72%,
+      #000 100%
+    ) !important;
+    mask-image:linear-gradient(
+      to right,
+      #000 0%,
+      #000 28%,
+      rgba(0,0,0,.28) 39%,
+      transparent 47%,
+      transparent 53%,
+      rgba(0,0,0,.28) 61%,
+      #000 72%,
+      #000 100%
+    ) !important;
   }
 
   .mail-scene{
@@ -6833,11 +6836,6 @@ article.ps-case header.ps-hero .ps-hero-copy > p.ps-kicker{
 
   .envelope-hint{
     bottom:clamp(30px,5svh,52px) !important;
-  }
-
-  .envelope-hero::before,
-  .envelope-hero::after{
-    width:38vw;
   }
 
   .about-snapshot .about-bio{
