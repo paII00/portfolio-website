@@ -6710,7 +6710,7 @@ article.ps-case header.ps-hero .ps-hero-copy > p.ps-kicker{
     position:absolute;
     top:0;
     bottom:0;
-    width:22vw;
+    width:42vw;
     background-image:url("assets/flowers/flower-frame.webp");
     background-size:auto 100%;
     background-repeat:no-repeat;
@@ -6721,11 +6721,15 @@ article.ps-case header.ps-hero .ps-hero-copy > p.ps-kicker{
   .envelope-hero::before{
     left:0;
     background-position:left center;
+    -webkit-mask-image:linear-gradient(to right,#000 0 54%,rgba(0,0,0,.72) 72%,transparent 100%);
+    mask-image:linear-gradient(to right,#000 0 54%,rgba(0,0,0,.72) 72%,transparent 100%);
   }
 
   .envelope-hero::after{
     right:0;
     background-position:right center;
+    -webkit-mask-image:linear-gradient(to left,#000 0 54%,rgba(0,0,0,.72) 72%,transparent 100%);
+    mask-image:linear-gradient(to left,#000 0 54%,rgba(0,0,0,.72) 72%,transparent 100%);
   }
 
   .hero-flower-frame{
@@ -6833,7 +6837,7 @@ article.ps-case header.ps-hero .ps-hero-copy > p.ps-kicker{
 
   .envelope-hero::before,
   .envelope-hero::after{
-    width:18vw;
+    width:38vw;
   }
 
   .about-snapshot .about-bio{
